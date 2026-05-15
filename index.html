@@ -1,0 +1,63 @@
+<!-- 
+Problema: 
+Una institucion necesita un sitio web donde los usuarios pueda
+visualizar eventos disponibles (Seminarios, talleres, ect.) ver
+detalles y acceder desde cualquier dispositivos.
+
+SOLUCION: 
+Crear un sitio web responsivo que muestre eventos en formato de 
+tarjetas(Cards), adaptables a diferentes pantallas, utilizando CSS GRID,
+Media Queries, y SASS
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistema de Eventos </title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1> Eventos Disponibles </h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="grid-eventos">
+
+            <div class="card">
+                <h3> Seminario de Desarrollo Web </h3>
+                <p> Aprender sobre desarrollo web </p>
+                <button onclick="verDetalle('Desarrollo Web')"> Ver mas </button>
+            </div>
+    
+            <div class="card">
+                <h3> Taller de HTML5 </h3>
+                <p> Aprende sobre los fundamentos semanticos </p>
+                <button onclick="verDetalle('HTML5')"> Ver mas </button>
+            </div>
+
+            <div class="card">
+                <h3> Taller de CSS </h3>
+                <p> Aprender sobre las hojas de estilo en casacada </p>
+                <button onclick="verDetalle('CSS')"> Ver mas </button>
+            </div>
+
+            <div class="card">
+                <h3> Seminario de Frameworks </h3>
+                <p> Aprender sobre las arquitecturas de estas potentes tecnologias </p>
+                <button onclick="verDetalle('Frameworks')"> Ver mas </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> 2026 - Plataforma de eventos INTECAP </p>
+    </footer>
+
+
+    <script src="JS/app.js"></script>
+</body>
+</html>

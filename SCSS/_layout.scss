@@ -1,0 +1,47 @@
+body{
+    font-family: $fuente ;
+    margin: 0px;
+    background-color: $color-primario;
+}
+.header{
+    @include flexCenter;
+    background-color: $color-terciario;
+    color: $color-beige;
+    padding: 20px;
+}
+.footer{
+    @include flexCenter;
+    background-color: $color-terciario;
+    color: $color-beige;
+    padding: 8px;
+}
+.contenedor{
+    padding: 20px;
+}
+.grid-eventos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @include responsive(1024px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(600px){
+        grid-template-columns: 1fr;
+    }
+}
+
+.card{
+    background-color: $color-secundario;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+
+    h3{
+        color: $color-beige;
+    }
+    button{
+        @include botonReutulizable;
+    }
+}
